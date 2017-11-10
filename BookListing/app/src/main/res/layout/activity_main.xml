@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.android.booklisting.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.48"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/headerPic"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:id="@+id/fiveHeaderPics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                style="@style/header_tiles"
+                android:src="@drawable/book1" />
+
+            <ImageView
+                style="@style/header_tiles"
+                android:src="@drawable/book2" />
+
+            <ImageView
+                style="@style/header_tiles"
+                android:src="@drawable/book3" />
+
+            <ImageView
+                style="@style/header_tiles"
+                android:src="@drawable/book4" />
+
+            <ImageView
+                style="@style/header_tiles"
+                android:src="@drawable/book5" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/redTrans" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:hint="Search book title here..."
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:background="@drawable/search" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/booklist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/clearblack">
+
+            <TextView
+                android:id="@+id/example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/black"
+                android:dividerHeight="1dp"
+                android:orientation="vertical">
+
+            </ListView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
