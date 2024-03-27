@@ -9,6 +9,9 @@ Project from my Androids Basics Udacity Course
 - Checks for internet connection
 - Using ListView and Adapter to populate a list.
 
+### Here is link to Gitlab repo (updated to run in 2024)
+...<a href="https://gitlab.com/jacq-android-apps/legacy/otaku-readers-delight">Readers Delight Gitlab Repository</a>
+
 ### Requirements
 ```
 * Android Studio
